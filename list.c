@@ -7,8 +7,7 @@ list_t *ll_new() {
   list_t *ret = (list_t *) malloc(sizeof(list_t));
   ret->head = (void *)0;
   ret->size = 0;
-  return ret;
-}
+  return ret; }
 
 // O(n)
 void ll_delete(list_t *list) {
@@ -41,4 +40,3 @@ list_node_t *seek_tail(list_node_t *node) {
     return seek_tail(node->next);
   }
 }
-
